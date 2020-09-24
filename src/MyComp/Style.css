@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;700&family=Roboto:wght@400;700&display=swap");
+.navitems {
+  background-color: #EAEAEA;
+}
+
+.navitems .active-class {
+  border-bottom: red 3px solid;
+}
+
+.navitems .xyz {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.Header {
+  background-color: #EAEAEA;
+  margin-top: -60px;
+}
+
+.Header .hello {
+  color: #0A7379;
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+}
+
+.Header .name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 90px;
+}
+
+.Header .image {
+  height: 630px;
+}
+
+.Header .margin {
+  margin-top: 200px;
+}
+
+.about-me .size {
+  margin: 150px 0px;
+}
+
+.about-me .box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 2px 2px 16px 1px;
+          box-shadow: 2px 2px 16px 1px;
+}
+
+#EXPERIENCE {
+  background-color: #2e8c8e;
+  padding-bottom: 120px;
+}
+
+#EXPERIENCE .box {
+  background-color: #0A7379;
+}
+
+#MY-WORK {
+  background-color: #EAEAEA;
+}
+
+#portfolio {
+  background-color: #EAEAEA;
+}
+
+#portfolio .bg {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#TESTIMONIALS {
+  background-color: #2E8C8E;
+}
+
+#social i {
+  color: rgba(255, 255, 255, 0.411);
+  font-size: 70px;
+  margin-top: 26px;
+}
+
+#social i:hover {
+  color: #00E9A5;
+}
+
+.para {
+  color: #0AE9A5;
+}
+
+.contactInfo i:hover {
+  color: #0AE9A5;
+}
+
+#head {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#head .overlay {
+  background-color: #383c4cc7;
+  min-height: 600px;
+}
+
+#head .text {
+  color: white;
+  margin-top: 200px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600px;
+}
+
+@media (max-width: 640px) {
+  .Header {
+    text-align: center;
+  }
+  .Header .image {
+    display: none;
+  }
+  .navitems .active-class {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navitems .active-class {
+    border-bottom: none;
+  }
+}
+/*# sourceMappingURL=Style.css.map */

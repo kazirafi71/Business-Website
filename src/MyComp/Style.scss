@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+$pop: 'Poppins', sans-serif;
+$quick: 'Quicksand', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$bg:#2E8C8E;
+$col:#0AE9A5;
+
+.navitems{
+    background-color: #EAEAEA;
+    .active-class{
+        border-bottom: red 3px solid;
+        
+    }
+    
+
+    .xyz{
+        font-family: $pop;
+        font-weight: 600;
+        color: black;
+    }
+
+}
+
+
+.Header{
+    background-color: #EAEAEA;
+    margin-top: -60px;
+
+    .hello{
+        color: #0A7379;
+        font-family: $quick;
+        font-size: 50px;
+    }
+
+    .name{
+        font-family: $pop;
+        font-weight: 500;
+        font-size: 90px;
+    }
+    .image{
+        height: 630px;
+    }
+    .margin{
+        margin-top: 200px;
+    }
+}
+
+
+
+// ABout-me
+
+.about-me{
+    .size{
+        margin: 150px 0px;
+        
+    }
+
+    .box{
+        box-sizing: border-box;
+        box-shadow: 2px 2px 16px 1px;
+        
+    }
+}
+
+// EXPERIENCE
+
+#EXPERIENCE{
+    background-color:#2e8c8e ;
+    
+    padding-bottom: 120px;
+
+    .box{
+        background-color: #0A7379;
+        
+    }
+}
+
+// MY-WORK
+
+#MY-WORK{
+    background-color: #EAEAEA;
+}
+
+
+// portfolio
+
+#portfolio{
+    background-color: #EAEAEA;
+
+    .bg{
+        background-color: white;
+        font-family: $pop;
+    }
+}
+
+// TESTIMONIALS
+
+#TESTIMONIALS{
+    background-color: $bg;
+}
+
+
+
+#social{
+    
+    i{
+        color: rgba(255, 255, 255, 0.411);
+        font-size: 70px;
+        margin-top: 26px;
+        
+    }
+    
+    i:hover{
+        color: #00E9A5;
+    }
+
+
+}
+
+.para{
+    color:$col ;
+}
+
+
+// Price
+
+.contactInfo{
+
+    i:hover{
+        color: $col;
+    }
+}
+
+    #head{
+        // background-image: url('./Images/price-header-bg.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+        .overlay{
+            background-color:#383c4cc7;
+            
+            min-height: 600px;
+
+            
+        }
+
+        .text{
+            color: white;
+            margin-top: 200px;
+            font-family: $pop;
+            font-weight: 600px;
+        }
+
+        
+    }
+
+
+
+@media (max-width:640px){
+    .Header{
+        text-align: center;
+        .image{
+            display: none;
+        }
+    }
+
+    .navitems{
+        .active-class{
+            border-bottom: none;
+            
+        }
+    }
+}
+
+@media (max-width:768px){
+    .navitems{
+        .active-class{
+            border-bottom: none;
+            
+            
+        }
+    }
+    
+    
+}
+
+@media (min-width:1080px){
+    
+}
