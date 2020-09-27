@@ -1,11 +1,17 @@
-import React from 'react';
 
+import React, { useEffect } from 'react';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const Form = () => {
+  useEffect(()=>{
+    Aos.init({duration:2000},[])
+})
     return (
-        <div>
-            <form>
-  <div className="row ">
-    <div className="col m-4">
+        <div data-aos="fade-left" >
+
+            <form >
+  <div  className="row ">
+    <div  className="col m-4">
       <input type="text" className="form-control" placeholder="Full name"/>
     </div>
     <div className="col m-4">

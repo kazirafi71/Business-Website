@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from './Images/home_man.png'
 import Common from './Common'
 import data,{expData,skillData,blogData} from './AllData'
 import img2 from './Images/2 (1).jpg';
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 
 
 const Contact = () => {
+    useEffect(()=>{
+        Aos.init({duration:2000},[])
+    })
     
     console.log(skillData)
     return (
@@ -47,7 +51,7 @@ const Contact = () => {
                         <div className="row justify-content-around">
                                 {data.map((val,index)=>{
                                 return(
-                                    <div className=" shadow p-5 g-4 gx-4 text-center col-5 box">
+                                    <div data-aos="fade-left" className=" shadow p-5 g-4 gx-4 text-center col-5 box">
                                         
                                     <h1>{val.number}</h1>
                                     <p>{val.title}</p>
@@ -63,18 +67,18 @@ const Contact = () => {
             {/* Experience */}
 
         <section id='EXPERIENCE'>
-            <div className="container ">
-            <div className="row">
+            <div  className="container ">
+            <div  className="row">
                 <Common 
                 title='MY EXPERIENCE'
                 des='Experience and Skills'
                 />
             </div>
 
-            <div className="row justify-content-around">
+            <div  className="row justify-content-around">
                 
                 {expData.map((val,index)=>{
-                    return(<div className=" p-4 text-light col-md-5 g-4 box ">
+                    return(<div data-aos="fade-up" className=" p-4 text-light col-md-5 g-4 box ">
                         <span>{val.icon}</span>
                     <h5>{val.time}</h5>
                 <h2>{val.title}</h2>
@@ -90,8 +94,9 @@ const Contact = () => {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                    <div className="row">
+                    <div data-aos="fade-left" className="row">
                 <Common 
+                
                 title='MY WORK'
                 des='Our Awesome Projects'
                 />
@@ -129,7 +134,7 @@ const Contact = () => {
                     
                     {skillData.map((val,ind)=>{
                         return(
-                            <div className="col-md-4 g-4 "><img className='img-fluid  ' src={val.img}></img>
+                            <div data-aos="fade-left" className="col-md-4 g-4 "><img className='img-fluid  ' src={val.img}></img>
                             <h2 className='bg p-2 '>{val.title}</h2>
                             </div>)
                     })}
@@ -154,7 +159,7 @@ const Contact = () => {
             </div>
             <div className="container py-5">
                 <div className="row text-center ">
-                    <div className=" col-md-8 offset-md-3 ">
+                    <div data-aos="fade-up" className="  col-md-8 offset-md-3 ">
                     <div className="card text-center py-4" >
   <img className="card-img-top img-fluid w-25 m-auto rounded-circle" src={img2} alt="Card image cap"/>
   <div className="card-body">
@@ -181,7 +186,7 @@ const Contact = () => {
                 <div className="row ">
                     {blogData.map((val,index)=>{
                         return(
-                        <div className="col-md-4 g-4">
+                        <div data-aos="fade-right" className="col-md-4 g-4">
                             <div class="card" >
   <img class="card-img-top" src={val.img} alt="Card image cap"/>
   <div class="card-body">
