@@ -23,7 +23,7 @@ const Contact = () => {
                 <div className="row ">
                     <div className="col-6 margin">
                         <h3 className='hello'>Hello, I’m</h3>
-                        <h1 className='name'>Abdur Rohman</h1>
+                        <h1 className='name text-warning'>Kazi Rafi</h1>
                         <h3>Head Of Ideas</h3>
                     </div>
                     <div className="col-6 mt-5">
@@ -40,13 +40,13 @@ const Contact = () => {
         <section className='about-me'>
             <div className="container">
                 <div className="row  size">
-                    <div className="col-md-6 col-12">
+                    {/* <div className="col-md-6 col-12">
                         <p className='' style={{color:'#0A7379'}}>ABOUT ME</p>
                         <h4 className='mb-4' >Why hire me for your next project?</h4>
                         <p className='lead'>Meet my startup design agency Shape Rex Currently I am working at CodeNext as Product Designer. Before that I’ve worked at SpurBee, Dhaka as a UX, UI Designer. Meet my startup design agency Shape Rex Currently I am working at CodeNext as Product Designer. Before that I’ve worked at SpurBee, Dhaka as a UX, UI Designer.</p>
                         
                         <a className='mt-4 btn btn-success' href="#head">LEARN MORE</a>
-                    </div>
+                    </div> */}
                     <div className="col-md-6">
                         <div className="row justify-content-around">
                                 {data.map((val,index)=>{
@@ -128,7 +128,7 @@ const Contact = () => {
 
         {/* Portfolio */}
 
-        <section id="portfolio">
+        {/* <section id="portfolio">
             <div className="container py-5">
                 <div className="row">
                     
@@ -142,11 +142,11 @@ const Contact = () => {
                 </div>
                 
             </div>
-        </section>
+        </section> */}
 
         {/* TESTIMONIALS */}
 
-        <section id="TESTIMONIALS">
+        {/* <section id="TESTIMONIALS">
             <div className="container ">
                 <div className="row">
                     <div className="col">
@@ -204,7 +204,7 @@ const Contact = () => {
 
 
         </section>
-        
+         */}
 
 
         </>
